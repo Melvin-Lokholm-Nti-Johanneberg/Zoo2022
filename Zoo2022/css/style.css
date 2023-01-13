@@ -1,0 +1,63 @@
+#wrapper {
+    
+    font-size: 36px;
+    display:grid;
+    width: 40%;
+    height:125vh;
+    margin: auto;
+    background-color: white;
+    grid-template-areas: "s1 s1 s1"
+                         "nv nv nv"
+                         "s2 s2 as"
+                         "s2 s2 as"
+                         "s3 s3 as"
+                         "ft ft as"
+                         "hd hd hd";
+    grid-template-columns:33,3% 33,3% 33,3%;
+    border: 6px dotted black;
+    padding: 10px;
+    gap: 10px; 
+    
+}
+header {
+    grid-area: hd;
+    background-color: rgb(200,0,200);
+    height: 200px;
+    border: 3px solid gray;
+
+    }
+nav {
+        grid-area: nv;
+        background-color: #00CC00;
+        height: 100px;
+        border: 3px solid gray;
+    }
+#section_1 {
+        grid-area: s1;
+        background-color: aqua;
+        height: 150px;
+        border: 3px solid gray;
+    }
+#section_2 {
+        grid-area: s2;
+        background-color: turquoise;
+        border: 3px solid gray;
+    }
+
+#section_3 {
+            grid-area: s3;
+            background-color:red;
+            border: 3px solid gray;
+    }
+
+aside {
+        grid-area: as;
+        background-color: rgb(242, 249, 150);
+        height: 485px;
+        border: 3px solid gray;
+    }
+footer{
+        grid-area: ft;
+        background-color: orange;
+        border: 3px solid gray;
+    }
